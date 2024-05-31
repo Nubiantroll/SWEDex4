@@ -14,12 +14,10 @@ import java.net.MalformedURLException;
 
                 // Create URL object
                 URL url = new URL(webpage);
-                BufferedReader readr =
-                        new BufferedReader(new InputStreamReader(url.openStream()));
+                BufferedReader readr = new BufferedReader(new InputStreamReader(url.openStream()));
 
                 // Enter filename in which you want to download
-                BufferedWriter writer =
-                        new BufferedWriter(new FileWriter(file));
+                BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
                 // read each line from stream till end
                 String line;
@@ -30,7 +28,7 @@ import java.net.MalformedURLException;
 
                 readr.close();
                 writer.close();
-               //System.out.println("Successfully Downloaded.");
+               System.out.println("Successfully Downloaded.");
 
             }
 
